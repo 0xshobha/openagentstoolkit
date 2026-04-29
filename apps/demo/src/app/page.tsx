@@ -23,6 +23,8 @@ export default function Home() {
   };
 
   const connectWallet = async () => {
+    if (isConnecting || walletAddress) return;
+
     if (typeof window !== 'undefined' && window.ethereum !== undefined) {
       try {
         setIsConnecting(true);
@@ -32,10 +34,16 @@ export default function Home() {
           setWalletAddress(accounts[0]);
           showToast("Connection Successful", `Linked address ${accounts[0].slice(0, 6)}...${accounts[0].slice(-4)}`);
         }
-      } catch (error) {
+      } catch (error: any) {
         console.error(error);
+        const errorCode = error?.error?.code || error?.code;
         const errorMessage = error instanceof Error ? error.message : "Failed to connect wallet";
-        showToast("Connection Failed", errorMessage, 'error');
+        
+        if (errorCode === -32002 || errorMessage.includes('-32002') || errorMessage.includes('already pending')) {
+          showToast("Request Pending", "Please open your wallet to approve the pending connection request.", 'error');
+        } else {
+          showToast("Connection Failed", errorMessage, 'error');
+        }
       } finally {
         setIsConnecting(false);
       }
