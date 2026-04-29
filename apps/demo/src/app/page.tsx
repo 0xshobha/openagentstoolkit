@@ -34,6 +34,7 @@ export default function Home() {
           setWalletAddress(accounts[0]);
           showToast("Connection Successful", `Linked address ${accounts[0].slice(0, 6)}...${accounts[0].slice(-4)}`);
         }
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } catch (error: any) {
         console.error(error);
         const errorCode = error?.error?.code || error?.code;
