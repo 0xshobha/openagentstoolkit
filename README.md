@@ -1,4 +1,4 @@
-# Open Agents Toolkit (OAT) 🤖🔗
+# Open Agents Toolkit (OAT) 
 
 Welcome to the **Open Agents Toolkit**!
 
