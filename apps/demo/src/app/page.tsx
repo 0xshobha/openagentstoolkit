@@ -102,27 +102,27 @@ export default function Home() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="flex flex-col items-center text-center mt-12 md:mt-24 z-10 relative px-4"
+        className="flex flex-col items-center text-center mt-12 md:mt-16 z-10 relative px-4"
       >
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 text-white">
-          Discover the power <br /> of Open Agents
+        <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-6 text-white leading-tight">
+          Discover your <br /> path to Web3
         </h1>
-        <p className="text-slate-400 text-lg md:text-xl max-w-xl mx-auto mb-10 font-light">
-          Deploy verifiable, on-chain AI actors across the world's leading networks, right from your dashboard.
+        <p className="text-slate-400 text-lg md:text-xl max-w-lg mx-auto mb-10 font-light">
+          Learn about the world&apos;s leading blockchains, right from your phone.
         </p>
-        <div className="flex items-center gap-4">
-          <button className="bg-slate-800/80 hover:bg-slate-700 text-white border border-slate-700 px-5 py-3 rounded-2xl flex items-center gap-3 transition-all backdrop-blur-md">
-             <Rocket size={18} className="text-slate-400" />
-             <div className="text-left">
-               <div className="text-[10px] text-slate-400 uppercase tracking-wider">Deploy Now</div>
-               <div className="font-semibold text-sm">Start Building</div>
+        <div className="flex items-center justify-center gap-4">
+          <button className="bg-black hover:bg-[#111] border border-slate-800 text-white px-5 py-2.5 rounded-[14px] flex items-center gap-3 transition-all">
+             <svg viewBox="0 0 384 512" className="w-5 h-5 fill-white" xmlns="http://www.w3.org/2000/svg"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+             <div className="text-left flex flex-col justify-center">
+               <div className="text-[10px] text-slate-300 leading-none">Download on the</div>
+               <div className="font-semibold text-sm leading-none mt-1">App Store</div>
              </div>
           </button>
-          <button className="bg-slate-800/80 hover:bg-slate-700 text-white border border-slate-700 px-5 py-3 rounded-2xl flex items-center gap-3 transition-all backdrop-blur-md">
-             <ShieldCheck size={18} className="text-slate-400" />
-             <div className="text-left">
-               <div className="text-[10px] text-slate-400 uppercase tracking-wider">Explore API</div>
-               <div className="font-semibold text-sm">Read Docs</div>
+          <button className="bg-black hover:bg-[#111] border border-slate-800 text-white px-5 py-2.5 rounded-[14px] flex items-center gap-3 transition-all">
+             <svg viewBox="0 0 512 512" className="w-5 h-5 fill-white" xmlns="http://www.w3.org/2000/svg"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+             <div className="text-left flex flex-col justify-center">
+               <div className="text-[10px] text-slate-300 leading-none">GET IT ON</div>
+               <div className="font-semibold text-sm leading-none mt-1">Google Play</div>
              </div>
           </button>
         </div>
@@ -133,30 +133,12 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.3 }}
-        className="w-full max-w-4xl mx-auto mt-16 md:mt-24 relative h-[300px] md:h-[400px] z-10"
+        className="w-full max-w-5xl mx-auto mt-4 relative z-10 flex justify-center perspective-[1000px]"
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-[#07090E] via-transparent to-transparent z-20"></div>
-        <div className="w-full h-full bg-slate-900/20 border-t border-x border-slate-800/50 rounded-t-[3rem] backdrop-blur-xl relative overflow-hidden flex items-center justify-center" style={{ perspective: '1000px' }}>
-            
-            {/* Core glowing sphere */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-white/10 blur-[50px] rounded-full mix-blend-screen"></div>
-            
-            {/* Abstract Platform */}
-            <div className="w-[70%] h-[200px] border border-white/5 bg-slate-800/20 rounded-[3rem] transform rotate-x-60 absolute bottom-[-20px] shadow-[0_-20px_60px_rgba(255,255,255,0.05)] backdrop-blur-3xl flex items-center justify-center">
-               {/* Center glowing logo on platform */}
-               <div className="w-16 h-16 bg-white/10 rounded-full blur-xl"></div>
-            </div>
-            
-            {/* Floating UI Elements */}
-            <motion.div animate={{y: [0, -15, 0]}} transition={{repeat: Infinity, duration: 4, ease: "easeInOut"}} className="absolute top-[25%] left-[25%] w-16 h-16 bg-indigo-500/20 rounded-2xl border border-indigo-400/30 flex items-center justify-center backdrop-blur-md rotate-12 shadow-[0_0_30px_rgba(99,102,241,0.2)]">
-              <Sparkles className="text-indigo-300" size={24} />
-            </motion.div>
-            <motion.div animate={{y: [0, -25, 0]}} transition={{repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1}} className="absolute top-[35%] right-[25%] w-20 h-20 bg-green-500/20 rounded-3xl border border-green-400/30 flex items-center justify-center backdrop-blur-md -rotate-12 shadow-[0_0_30px_rgba(34,197,94,0.2)]">
-              <Zap className="text-green-300" size={32} />
-            </motion.div>
-            <motion.div animate={{y: [0, -10, 0]}} transition={{repeat: Infinity, duration: 3.5, ease: "easeInOut", delay: 0.5}} className="absolute top-[45%] left-[45%] w-14 h-14 bg-purple-500/20 rounded-xl border border-purple-400/30 flex items-center justify-center backdrop-blur-md rotate-6 shadow-[0_0_30px_rgba(168,85,247,0.2)]">
-              <ShieldCheck className="text-purple-300" size={20} />
-            </motion.div>
+        <div className="w-full relative flex justify-center pointer-events-none">
+          {/* A gradient mask to fade the bottom of the image into the background if needed */}
+          <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#07090E] to-transparent z-20"></div>
+          <img src="/images/hero-graphic.png" alt="3D web3 blocks floating from phone" className="w-[85%] h-auto object-contain drop-shadow-[0_0_100px_rgba(34,197,94,0.15)] mix-blend-screen" />
         </div>
       </motion.div>
 
