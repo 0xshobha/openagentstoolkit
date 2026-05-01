@@ -1,9 +1,13 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import Features from '../components/Features';
-import Stats from '../components/Stats';
 import Ecosystem from '../components/Ecosystem';
+import Problem from '../components/Problem';
+import Solution from '../components/Solution';
+import Features from '../components/Features';
 import HowItWorks from '../components/HowItWorks';
+import UseCases from '../components/UseCases';
+import SocialProof from '../components/Stats'; // Note: Stats is now SocialProof
+import CtaSection from '../components/CtaSection';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
@@ -19,9 +23,13 @@ export default function Home() {
 
       <Hero />
       <Ecosystem />
-      <Features />
-      <Stats />
+      <Problem />
+      <Solution />
       <HowItWorks />
+      <Features />
+      <UseCases />
+      <SocialProof />
+      <CtaSection />
       <Footer />
       
     </main>

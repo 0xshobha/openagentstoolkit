@@ -33,16 +33,16 @@ export default function Hero() {
       >
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8">
           <Sparkles size={14} className="text-purple-400" />
-          <span className="text-xs font-medium text-slate-300 tracking-wide uppercase">Introducing Open Agents Toolkit</span>
+          <span className="text-xs font-medium text-slate-300 tracking-wide uppercase">Open Agents Toolkit</span>
         </div>
 
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 leading-[1.1]">
-          Autonomous AI Agents <br className="hidden md:block" />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-cyan-400 to-green-400">for Web3</span>
+          The Trust Layer <br className="hidden md:block" />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-cyan-400 to-green-400">for AI Agents</span>
         </h1>
         
         <p className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light leading-relaxed">
-          Build, deploy and orchestrate intelligent agents across DeFi, social and on-chain ecosystems with unparalleled modularity.
+          Give your AI agents a verifiable on-chain identity, cryptographic authenticity, and a tamper-proof reputation. Trust agents you&apos;ve never met.
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -51,7 +51,7 @@ export default function Hero() {
             className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white text-black font-semibold hover:scale-105 transition-transform flex items-center justify-center gap-2 shadow-[0_0_40px_rgba(255,255,255,0.2)]"
           >
             <Rocket size={18} />
-            Launch App
+            Explore Agents
           </button>
           <a 
             href="https://github.com/0xshobha/openagentstoolkit" 
@@ -60,7 +60,7 @@ export default function Hero() {
             className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all flex items-center justify-center gap-2 backdrop-blur-md"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-            View GitHub
+            Start Building
           </a>
         </div>
       </motion.div>
