@@ -9,12 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@rainbow-me/rainbowkit": "^2.2.10",
+    "@tanstack/react-query": "^5.100.7",
     "ethers": "^6.16.0",
     "framer-motion": "^12.38.0",
     "lucide-react": "^1.14.0",
     "next": "14.2.35",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "viem": "^2.48.7",
+    "wagmi": "^2.19.5"
   },
   "devDependencies": {
     "@types/node": "^20",

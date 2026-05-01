@@ -3,8 +3,22 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Sparkles, Rocket } from 'lucide-react';
+import { useAccount } from 'wagmi';
+import { useConnectModal } from '@rainbow-me/rainbowkit';
 
 export default function Hero() {
+  const { isConnected } = useAccount();
+  const { openConnectModal } = useConnectModal();
+
+  const handleLaunchApp = () => {
+    if (!isConnected && openConnectModal) {
+      openConnectModal();
+    } else {
+      // If connected, proceed to app
+      alert("Launching App for connected wallet...");
+    }
+  };
+
   return (
     <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 px-4 flex flex-col items-center justify-center min-h-[90vh]">
       {/* Background Glows */}
@@ -32,7 +46,10 @@ export default function Hero() {
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white text-black font-semibold hover:scale-105 transition-transform flex items-center justify-center gap-2 shadow-[0_0_40px_rgba(255,255,255,0.2)]">
+          <button 
+            onClick={handleLaunchApp}
+            className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white text-black font-semibold hover:scale-105 transition-transform flex items-center justify-center gap-2 shadow-[0_0_40px_rgba(255,255,255,0.2)]"
+          >
             <Rocket size={18} />
             Launch App
           </button>
