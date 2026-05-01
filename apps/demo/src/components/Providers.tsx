@@ -7,7 +7,7 @@ import { mainnet, sepolia } from "wagmi/chains";
 import { RainbowKitProvider, getDefaultConfig, darkTheme } from "@rainbow-me/rainbowkit";
 import '@rainbow-me/rainbowkit/styles.css';
 
-const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || "fb9b3e1a0bba8e752d5b6ee751f87cb5";
+const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || "21fef48091f12692cad574a6f7753643";
 
 const config = getDefaultConfig({
   appName: "Open Agents Toolkit",
